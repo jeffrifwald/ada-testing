@@ -12,7 +12,16 @@
         
         content.innerHTML = 
           '<div class="aria-region" aria-live="assertive" role="status">0</div>' + 
-          '<button class="update-button">Update Count</button>';
+          '<div>'
+            '<span>There are now divs between everything!</span>' +
+            '<span>There are now divs between everything!</span>' +
+            '<span>There are now divs between everything!</span>' +
+            '<span>There are now divs between everything!</span>' +
+            '<span>There are now divs between everything!</span>' +
+            '<div>' +
+              '<button class="update-button">Update Count</button>' +
+            '</div>' +
+          '</div>';
         
        const button = document.querySelector('.update-button');
        const ariaRegion = document.querySelector('.aria-region')
