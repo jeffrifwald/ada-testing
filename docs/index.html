@@ -11,7 +11,6 @@
         const content = document.querySelector('.content');
         
         content.innerHTML = 
-          '<div class="aria-region" aria-live="assertive" aria-atomic="true" aria-hidden="false" aria-relevant="additions text">0</div>' + 
           '<div>' +
             '<div>There are now divs between everything!</div>' +
             '<div>There are now divs between everything!</div>' +
@@ -20,7 +19,8 @@
             '<div>' +
               '<button class="update-button">Update Count</button>' +
             '</div>' +
-          '</div>';
+          '</div>' +
+          '<div class="aria-region" aria-live="assertive" aria-atomic="true" aria-hidden="false" aria-relevant="additions text">0</div>';
         
        const button = document.querySelector('.update-button');
        const ariaRegion = document.querySelector('.aria-region')
