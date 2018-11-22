@@ -6,7 +6,13 @@
   </head>
   <body>
     <div class="content">
-      <span aria-label="This is a long aria label">
+      <span>The first two are broken due to label nesting</span>
+      <label>
+        <button aria-label="One button">One</button>
+        <button aria-label="Two button">Two</button>
+      </label>
+      <span>The second two are fixed by using span for nesting</span>
+      <span>
         <button aria-label="Three button">Three</button>
         <button aria-label="Four button">Four</button>
       </span>
