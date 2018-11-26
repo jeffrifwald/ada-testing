@@ -34,30 +34,15 @@
       <div>Testing input focus</div>
       <input type="text" />
     </div>
+    <div class="focus-count">
+      0
+    </div>
     <script>
-//       window.onload = () => {
-//         const content = document.querySelector('.content');
+      document.addEventListener("focus", () => {
+        const focusCount = document.querySelector('.focus-count');
         
-//         content.innerHTML = 
-//           '<div>' +
-//             '<div>There are now divs between everything!</div>' +
-//             '<div>There are now divs between everything!</div>' +
-//             '<div>There are now divs between everything!</div>' +
-//             '<div>There are now divs between everything!</div>' +
-//             '<div>' +
-//               '<button class="update-button">Update Count</button>' +
-//             '</div>' +
-//           '</div>' +
-//           '<div class="aria-region" aria-live="assertive" aria-atomic="true" aria-hidden="false" aria-relevant="additions text">0</div>';
-        
-//        const button = document.querySelector('.update-button');
-//        const ariaRegion = document.querySelector('.aria-region')
-
-//        button.onclick = () => {
-//          ariaRegion.innerHTML = +ariaRegion.innerHTML + 1;
-//        };
-        
-//       };
+        focusCount.innerHTML = +focusCount.innerHTML + 1;
+      });
     </script>
   </body>
 </html>
